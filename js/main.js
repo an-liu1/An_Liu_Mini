@@ -4,7 +4,7 @@
         el : "#app",
 
         data : {
-            singlecooperinfo: [],
+            // singlecooperinfo: [],
             cooperinfo: [],
             
             modelname : "",
@@ -70,10 +70,10 @@
                 fetch(`./includes/connect.php`)
                 .then(res => res.json())
                 .then(data => {
-                    if (carModel) {
-                        console.log(data);
-                        this.singlecooperinfo = data;
-                    } else {
+                    // if (carModel) {
+                    //     console.log(data);
+                    //     this.singlecooperinfo = data;
+                    // } else {
                     console.log(data);
                     this.cooperinfo = data;
                     //target = e.currentTarget.className.split(' ')[1];
@@ -88,7 +88,7 @@
                     // this.modeldetails = modelDetails;
                     // this.modelpricing = pricing;
                     // this.videosource = path;
-                    }
+                    // }
                 })
                 .catch(function(error) {
                     console.error(error);
